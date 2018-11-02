@@ -1,4 +1,4 @@
-var hangman;
+// let  hangman = new canvas;
 
 // function Hangman() {
 
@@ -33,10 +33,15 @@ var hangman;
 // };
 
 document.getElementById('start-game-button').onclick = function () {
-  hangman = new Hangman();
+  // hangman = new Hangman();
+  abc.getWord();
 };
 
 
-document.onkeydown = function (e) {
+document.onkeyup = function(event) {
+  // abc.getWord();
+  abc.checkIfLetter(event);
+  abc.checkWinner();
+  }
 
-};
+
